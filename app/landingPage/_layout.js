@@ -39,13 +39,13 @@ const RootLayout = () => {
             name="needAssistance"
             options={{
               headerShown: true,
-              title: 'F.A.Q', // Titolo dell'header
+              title: 'F.A.Q', 
               headerStyle: {
                 backgroundColor: darkPalette.background,
               },
-              headerTintColor: "#E0E0E0", // Colore del testo dell'header
-              headerBackTitle: 'Back', // Testo del bottone "Back"
-              headerBackTitleVisible: true, // Mostra il testo del bottone "Back"
+              headerTintColor: "#E0E0E0", 
+              headerBackTitle: 'Back', 
+              headerBackTitleVisible: true, 
             }}
           />
         </Stack>

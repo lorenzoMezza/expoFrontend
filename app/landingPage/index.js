@@ -1,7 +1,7 @@
 import { StyleSheet, Text, SafeAreaView, View, Image, useWindowDimensions, TouchableOpacity} from 'react-native';
 import Animated, { FadeInDown, FadeInUp } from 'react-native-reanimated';
 import { darkPalette } from "../constants/colorPalette";
-import { useRouter } from 'expo-router'; // Import useRouter from expo-router
+import { useRouter } from 'expo-router'; 
 import { miscellaneous } from '../constants/miscellaneous';
 
 const appleBorderColor = '#dedede'; 
@@ -10,7 +10,7 @@ const emailBorderColor = '#858585';
 
 export default function LandingPage() {
   const { width } = useWindowDimensions();
-  const router = useRouter(); // Use router for navigation
+  const router = useRouter(); 
 
   const buttonWidth = width * 0.8; 
   const buttonHeight = buttonWidth / 5.3; 
@@ -29,7 +29,7 @@ export default function LandingPage() {
       <View style={styles.centeredContainer}>
         {!miscellaneous.isAndroid && (
           <TouchableOpacity
-            onPress={() => router.push('/landingPage/signInWithApple')} // Navigate to the appropriate page
+            onPress={() => router.push('/landingPage/signInWithApple')} 
           >
             <Animated.View entering={FadeInDown.duration(600).delay(200)} style={[styles.button, { 
               width: buttonWidth, 
@@ -46,7 +46,7 @@ export default function LandingPage() {
         )}
 
         <TouchableOpacity
-          onPress={() => router.push('/landingPage/signInWithGoogle')} // Navigate to the appropriate page
+          onPress={() => router.push('/landingPage/signInWithGoogle')}
         >
           <Animated.View entering={FadeInDown.duration(600).delay(!miscellaneous.isAndroid  ? 400 : 200)} style={[styles.button, { 
             width: buttonWidth, 
@@ -62,7 +62,7 @@ export default function LandingPage() {
         </TouchableOpacity>
 
         <TouchableOpacity
-          onPress={() => router.push('/landingPage/loginWithEmail')} // Navigate to the appropriate page
+          onPress={() => router.push('/landingPage/loginWithEmail')} 
         >
           <Animated.View entering={FadeInDown.duration(600).delay(600)} style={[styles.button, { 
             width: buttonWidth, 
@@ -80,7 +80,7 @@ export default function LandingPage() {
 
       <View style={styles.bottomContainer}>
         <TouchableOpacity
-          onPress={() => router.push('/landingPage/needAssistance')} // Navigate to the appropriate page
+          onPress={() => router.push('/landingPage/needAssistance')}
         >
           <Text style={styles.bottomText}>Need Assistance?</Text>
         </TouchableOpacity>

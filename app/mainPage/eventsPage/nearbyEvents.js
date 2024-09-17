@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, SafeAreaView, Animated, TouchableOpacity, ScrollView } from 'react-native';
 import { Searchbar } from 'react-native-paper';
-import Icon from 'react-native-vector-icons/MaterialIcons'; // Assicurati di avere react-native-vector-icons installato
+import Icon from 'react-native-vector-icons/MaterialIcons'; 
 import EventCard from '../../components/eventCard';
 import gpsManager from '../../LacationManagment/GPSManager';
 
@@ -101,21 +101,21 @@ const styles = StyleSheet.create({
     padding: 15,
     elevation: 3,
     zIndex: 1,
-    flexDirection: 'row', // Assicurati che icona e barra di ricerca siano in fila
-    alignItems: 'center', // Centra verticalmente gli elementi
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   filterButton: {
-    marginRight: 10, // Spazio tra icona e barra di ricerca
+    marginRight: 10, 
   },
   searchBar: {
     height: 50,
-    flex: 1, // Occupa lo spazio rimanente
+    flex: 1, 
     padding: 0,
     fontSize: 16,
   },
   scrollContainer: {
-    paddingTop: 80, // Regola in base all'altezza della barra di ricerca
-    paddingBottom: 150, // Aggiungi padding inferiore per evitare che l'ultima card venga nascosta dalla tab bar
+    paddingTop: 80,
+    paddingBottom: 150,
     padding: 14,
   },
 });

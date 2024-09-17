@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, ScrollView, SafeAreaView, Animated, TouchableOpacity } from 'react-native';
 import { Searchbar } from 'react-native-paper';
-import Icon from 'react-native-vector-icons/MaterialIcons'; // Ensure you have react-native-vector-icons installed
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 export default function MyEvents() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -83,20 +83,20 @@ const styles = StyleSheet.create({
     padding: 15,
     elevation: 3,
     zIndex: 1,
-    flexDirection: 'row', // Ensure icon and search bar are in a row
-    alignItems: 'center', // Vertically center the items
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   filterButton: {
-    marginRight: 10, // Space between icon and search bar
+    marginRight: 10,
   },
   searchBar: {
     height: 50,
-    flex: 1, // Take up remaining space
+    flex: 1,
     padding: 0,
     fontSize: 16,
   },
   scrollContainer: {
-    paddingTop: 80, // Adjust based on search bar height
+    paddingTop: 80, 
     padding: 14,
   },
   card: {

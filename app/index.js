@@ -14,7 +14,7 @@ export default function Page() {
 
   useEffect(() => {
     if (isMounted) {
-      // Effettua il redirect alla pagina /landingPage
+    
       router.replace('/mainPage');
     }
   }, [isMounted, router]);
@@ -22,11 +22,11 @@ export default function Page() {
   return (
     <View style={styles.container}>
       <StatusBar
-        style="light" // Imposta il colore del testo della status bar
-        backgroundColor={darkPalette.background} // Imposta il colore di sfondo della status bar
-        translucent={false} // Imposta se deve essere traslucida
+        style="light"
+        backgroundColor={darkPalette.background} 
+        translucent={false} 
       />
-      {/* Il resto del contenuto */}
+
     </View>
   );
 }

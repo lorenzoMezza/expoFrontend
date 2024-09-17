@@ -7,10 +7,10 @@ import NearbyEvents from './nearbyEvents';
 import JoinedEvents from './joinedEvents';
 import MyEvents from './myEvents';
 
-// Crea il navigatore dei tab superiori
+
 const Tab = createMaterialTopTabNavigator();
 
-// Crea il navigatore dello stack
+
 const Stack = createNativeStackNavigator();
 
 const TopTabs = () => {
@@ -18,20 +18,20 @@ const TopTabs = () => {
     <SafeAreaView style={styles.safeArea}>
       <Tab.Navigator
         screenOptions={{
-          tabBarActiveTintColor: '#ff6347', // Colore del testo del tab attivo
-          tabBarInactiveTintColor: '#555', // Colore del testo dei tab inattivi
-          tabBarLabelStyle: { fontSize: 14 }, // Dimensione del testo dei tab
-          tabBarStyle: { backgroundColor: '#f0f0f0' }, // Colore di sfondo della barra dei tab
-          tabBarIndicatorStyle: { backgroundColor: '#ff6347' }, // Colore dell'indicatore del tab attivo
-          tabBarItemStyle: { marginHorizontal: 10 }, // Spazio tra le tab
-          tabBarContentContainerStyle: { flexDirection: 'row' }, // Assicura che il contenitore dei tab non si estenda oltre il necessario
-          tabBarScrollEnabled: false, // Disabilita lo scrolling orizzontale dei tab
+          tabBarActiveTintColor: '#ff6347', 
+          tabBarInactiveTintColor: '#555',
+          tabBarLabelStyle: { fontSize: 14 }, 
+          tabBarStyle: { backgroundColor: '#f0f0f0' },
+          tabBarIndicatorStyle: { backgroundColor: '#ff6347' },
+          tabBarItemStyle: { marginHorizontal: 10 }, 
+          tabBarContentContainerStyle: { flexDirection: 'row' },
+          tabBarScrollEnabled: false,
         }}
       >
         <Tab.Screen name="Nearby" component={NearbyEvents} />
         <Tab.Screen name="Joined" component={JoinedEvents} />
         <Tab.Screen name="Owned" component={MyEvents} />
-        {/* Aggiungi altri tab se necessario */}
+      
       </Tab.Navigator>
     </SafeAreaView>
   );
@@ -49,10 +49,10 @@ const Layout = () => (
 
 export default Layout;
 
-// Esempio di componenti delle schermate
+
 const Tab1Screen = () => (
   <View style={styles.searchBarContainer}>
-    {/* Aggiungi il contenuto della SearchBar qui */}
+
   </View>
 );
 
@@ -69,10 +69,10 @@ const styles = StyleSheet.create({
   },
   searchBarContainer: {
     padding: 10,
-    backgroundColor: '#fff', // Colore di sfondo della SearchBar
+    backgroundColor: '#fff', 
   },
   searchBar: {
-    borderRadius: 20, // Opzionale: Arrotonda gli angoli della SearchBar
+    borderRadius: 20, 
   },
   screen: {
     flex: 1,

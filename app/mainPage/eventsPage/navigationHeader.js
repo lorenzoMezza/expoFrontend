@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableOpacity, Animated } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons'; // Importa l'icona
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 export default function NavigationHeader() {
   const [selectedTab, setSelectedTab] = useState('My Events');
@@ -17,7 +17,7 @@ export default function NavigationHeader() {
   useEffect(() => {
     if (tabRefs[selectedTab].current && tabsContainerRef.current) {
       tabRefs[selectedTab].current.measure((x, y, width, height, pageX, pageY) => {
-        // Misura la posizione del tab in relazione al contenitore dei tab
+  
         tabsContainerRef.current.measure((containerX, containerY, containerWidth, containerHeight, containerPageX, containerPageY) => {
           const cursorX = pageX - containerPageX;
 

@@ -98,7 +98,7 @@ const FAQ = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000', // Black background
+    backgroundColor: '#000',
   },
   scrollViewContent: {
     padding: 16,
@@ -106,22 +106,22 @@ const styles = StyleSheet.create({
   section: {
     marginBottom: 24,
     borderBottomWidth: 1,
-    borderBottomColor: '#333', // Darker separator line
+    borderBottomColor: '#333', 
     paddingBottom: 16,
   },
   header: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#fff', // Header text color
+    color: '#fff', 
     marginBottom: 8,
   },
   body: {
     fontSize: 16,
-    color: '#ccc', // Body text color
+    color: '#ccc',
     marginBottom: 8,
   },
   link: {
-    color: '#1E90FF', // Blue color for links
+    color: '#1E90FF', 
     textDecorationLine: 'underline',
   },
 });

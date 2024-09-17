@@ -3,7 +3,7 @@ import { StyleSheet, Text, SafeAreaView, View, TextInput, useWindowDimensions, T
 
 import { darkPalette } from "../constants/colorPalette";
 import { useRouter } from 'expo-router';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons'; // Import icon
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Animated, { FadeInRight } from 'react-native-reanimated';
 import { APIEndpointsURL } from '../constants/BackendAPIEndpoint';
 
@@ -219,7 +219,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
     paddingVertical: '15.5%',
-    width: '100%', // Make sure it spans the full width
+    width: '100%', 
   },
   headerText: {
     color: darkPalette.primaryText,

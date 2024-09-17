@@ -4,15 +4,15 @@ import { MaterialIcons, FontAwesome, Ionicons } from '@expo/vector-icons';
 
 
 export const TabBar = ({ state, descriptors, navigation }) => {
-  // Usa un oggetto per memorizzare le animazioni di ciascuna icona
+
   const animations = state.routes.reduce((acc, route) => {
     acc[route.name] = useRef(new Animated.Value(0)).current;
     return acc;
   }, {});
 
-  const iconSize = 28; // Dimensione predefinita per tutte le icone
-  const iconSizeActive = 32; // Dimensione dell'icona attiva
-  const { width } = Dimensions.get('window'); // Ottieni la larghezza dello schermo
+  const iconSize = 28; 
+  const iconSizeActive = 32; 
+  const { width } = Dimensions.get('window'); 
 
   const getIcon = (routeName, isFocused) => {
     const size = isFocused ? iconSizeActive : iconSize;
