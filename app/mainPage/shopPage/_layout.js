@@ -1,0 +1,39 @@
+import { Stack } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { View, StyleSheet } from 'react-native';
+import { darkPalette } from '../../constants/colorPalette';
+
+const RootLayout = () => {
+  const insets = useSafeAreaInsets();
+
+  return (
+    <>
+      <StatusBar
+        style="light"
+        backgroundColor={darkPalette.background}
+        translucent={true}
+      />
+      
+      <View style={[styles.container, { marginTop: -insets.top, marginBottom: -insets.bottom }]}>
+        <Stack>
+          <Stack.Screen
+            name="index"
+            options={{
+              headerShown: false,
+            }}
+          />
+        </Stack>
+      </View>
+    </>
+  );
+};
+
+export default RootLayout;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: darkPalette.background,
+  },
+});
