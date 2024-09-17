@@ -5,7 +5,7 @@ import { StatusBar } from 'expo-status-bar';
 import { darkPalette } from './constants/colorPalette';
 import { Platform } from 'react-native';
 export default function Page() {
-  const router = useRouter();
+  const router = useRouter(); 
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
